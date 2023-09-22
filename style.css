@@ -1,0 +1,202 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    align-items: center;
+}
+embed {
+    height: 28vh;
+    width: 21vw;
+    float: auto;
+    border: black solid 2px;
+}
+.logo{
+    display: flex;
+    width: 93vw;
+    height: 45vh;
+    align-items: center;
+    border-radius: 2vh;
+}
+
+i2{
+    height: 28%;
+    width: 21%;
+    float: auto;
+}
+
+h4 {
+    text-align: justify;
+    font-size: 2vw;
+}
+
+p{
+    text-align: justify;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2.2vh;
+}
+
+header {
+    padding: 0.8vh;
+    width: 92vw;
+    height: 30vh;
+    align-items: center;
+}
+
+.navbar {
+    float: auto;
+    font-size: 2.3vh;
+    background-color: #333;
+    height: 5vh;
+    width: 96vw;
+    text-align: center;
+    position: fixed;
+    border: aqua 0.4vh solid;
+    border-radius: 3vh;
+    padding-top: 2vh;
+    align-items: center;
+}
+
+a more{
+    text-align: center;
+    font-size: 4vh;
+}
+
+button{
+    font-size: 3vh;
+    background-color: #f2baba;
+    border: #090808 0.5vh solid;
+}
+
+button:hover{
+    font-size: 4vh;
+    color: red;
+}
+
+.navbar a {
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(241, 233, 233);
+    word-spacing: 2.1vw;
+}
+
+.navbar a:hover {
+    color: red;
+    font-size: 3.5vh;
+}
+
+main {
+    background-color: white;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    padding: 2.2vh;
+}
+
+section {
+    min-height: 100vh;
+}
+
+video {
+    padding: 1vh;
+}
+
+section h5 {
+    margin: 20px;
+}
+
+.sm {
+    text-decoration: none;
+}
+
+.profile {
+    max-width: 50vw;
+    border-radius: 2vh;
+    border: rgb(10, 7, 7);
+}
+
+.Courses_img {
+    float: left;
+    width: 31vh;
+    margin: 0.5vh;
+    border-radius: 3vh;
+    border: #090808 0.5vh solid;
+}
+
+footer {
+    background-color: #333;
+    overflow: hidden;
+    text-align: center;
+    word-spacing: 2.2vh;
+}
+
+footer a {
+    font-size: 2vh;
+    text-decoration: none;
+    padding: 1vh;
+    text-align: center;
+    float: auto;
+    color: white;
+}
+
+footer a:hover {
+    color: red;
+    font-size: 2.5vh;
+}
+
+hr {
+    width: 60vw;
+    height: 0.1vh;
+    background-color: rgb(27, 17, 17);
+}
+
+.name_txt {
+    font-size: 5vh;
+    text-align: center;
+    font-weight: 900;
+    letter-spacing: 0.4vw;
+    word-spacing: 1vw;
+    font-family: 'Gill Sans';
+}
+
+.sm {
+    padding: 0.8vw;
+    border-radius: 2vh;
+}
+
+.sm1 {
+    background-color: rgb(190, 162, 162);
+    padding: 0.8vw;
+    border-radius: 2vh;
+    text-decoration: none;
+}
+
+.sm2 {
+    background-color: rgb(190, 162, 162);
+    padding: 0.8vw;
+    border-radius: 2vh;
+    text-decoration: none;
+}
+
+.sm3 {
+    background-color: rgb(190, 162, 162);
+    padding: 0.8vw;
+    border-radius: 2vh;
+    text-decoration: none;
+}
+
+section h2 span {
+    padding: 2vh;
+    border-radius: 4vh;
+    background: linear-gradient(to right, #f5d837, #bbb812)
+}
+
+section h3 span {
+    padding: 1vh;
+    border-radius: 5vh;
+    text-decoration: none;
+    background: linear-gradient(to right, #f5d837, #bbb812)
+}

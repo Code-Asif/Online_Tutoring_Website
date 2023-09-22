@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Future Classes Logo</title>
+</head>
+<style>
+
+    body {
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #1a1a1a;
+    }
+    
+    .logo {
+        display: flex;
+        align-items: center;
+        font-family: 'Arial', sans-serif;
+        color: #fff;
+        font-size: 20vh;
+        font-weight: bold;
+        text-transform: uppercase;
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .circle {
+        align-items: center;
+        margin-top: 40vh;
+        width: 100vw;
+        height: 50vh;
+        background: radial-gradient(#00aaff, transparent);
+        border-radius: 0%;
+        position: absolute;
+        animation: pulse 0.5s infinite alternate;
+    }
+    
+    .text {
+        text-align: center;
+    }
+    
+    .text span {
+        color: #00aaff;
+    }
+    
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+            opacity: 0.9;
+        }
+        100% {
+            transform: scale(1.1);
+            opacity: 0.1;
+        }
+    }
+    
+</style>
+<body>
+    <div class="logo">
+        <div class="circle"></div>
+        <div class="text">
+            <br>
+            <span>The</span> Future Classes
+        </div>
+    </div>
+</body>
+</html>
