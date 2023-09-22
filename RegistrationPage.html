@@ -15,10 +15,10 @@
         }
 
         #musicButton {
-            padding: 10px 20px;
+            padding: 2vh 4vh;
             background-color: #007bff;
             color: #fff;
-            border: none;
+            border: 0.3vw solid #140606;
             cursor: pointer;
         }
 
@@ -68,28 +68,32 @@
 </head>
 
 <body>
-    <audio id="bgMusic" autoplay loop >
-        <source src="BCMusic.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-      </audio>
-    
-      <button id="musicButton"><i class="fa-solid fa-music"></i></button>
-    
-    
-      <script>
+
+    <audio id="bgMusic" autoplay loop>
+        <source src="BGMusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton"><i class="fa-solid fa-music"></i></button>
+
+
+    <script>
         const bgMusic = document.getElementById('bgMusic');
         const musicButton = document.getElementById('musicButton');
-    
-        musicButton.addEventListener('click', function () {
-          if (bgMusic.paused) {
+
+        window.addEventListener('load', function () {
             bgMusic.play();
-            musicButton.textContent = 'Pause';
-          } else {
-            bgMusic.pause();
-            musicButton.textContent = 'Play';
-          }
         });
-      </script>
+
+        musicButton.addEventListener('click', function () {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                musicButton.textContent = 'Pause';
+            } else {
+                bgMusic.pause();
+                musicButton.textContent = 'Play';
+            }
+        });
+    </script>
     <div class="container">
         <h2>Registration Form</h2>
         <form target="_blank" method="post">
