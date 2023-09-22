@@ -51,7 +51,7 @@
 <body>
     <div class="container">
         <h2>Registration Form</h2>
-        <form action="Prac2c.html" target="_blank" name="registrationForm" method="post">
+        <form target="_blank" name="registrationForm" method="post">
             Name: <input type="text" id="name" name="name" title="Enter only alphabet" required pattern="[a-zA-Z\s]+">
 
             E-mail: <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
@@ -73,7 +73,7 @@
             <br>
             <br>
 
-            <input type="submit" value="Register">
+            <input type="submit" value="Register" formaction="index.html">
         </form>
     </div>
 </body>
