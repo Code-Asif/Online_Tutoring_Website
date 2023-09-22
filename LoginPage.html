@@ -1,0 +1,60 @@
+<!-- Making a simple login page -->
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 20;
+            padding: 5;
+            background-color: #f8aeae;
+        }
+        .container {
+            max-width: 420px;
+            margin: 0 auto;
+            padding: 30px;
+            background-color: #f77171;
+            border-radius: 10px;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+        input[type="submit"] {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            margin-left: 150px;
+            border-radius: 3px;
+        }
+        input[type="submit"]:hover {
+            background-color: #020d18;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login Page</h2>
+        <form target="_blank" name="loginForm" method="post">
+            E-mail: <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            Password: <input type="password" id="password" name="password" title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+            <br>
+            <input type="submit" value="Login" formaction="index.html">
+        </form>
+    </div>
+</html>
