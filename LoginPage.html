@@ -9,6 +9,13 @@
             padding: 5;
             background-color: #f8aeae;
         }
+        #musicButton {
+            padding: 2vh 4vh;
+            background-color: #007bff;
+            color: #fff;
+            border: 0.3vw solid #140606;
+            cursor: pointer;
+        }
         .container {
             max-width: 420px;
             margin: 0 auto;
@@ -48,6 +55,31 @@
     </style>
 </head>
 <body>
+    <audio id="bgMusic" autoplay loop>
+        <source src="BGMusic.mp3" type="audio/mpeg">
+    </audio>
+
+    <button id="musicButton"><i class="fa-solid fa-music"></i></button>
+
+
+    <script>
+        const bgMusic = document.getElementById('bgMusic');
+        const musicButton = document.getElementById('musicButton');
+
+        window.addEventListener('load', function () {
+            bgMusic.play();
+        });
+
+        musicButton.addEventListener('click', function () {
+            if (bgMusic.paused) {
+                bgMusic.play();
+                musicButton.textContent = 'Pause';
+            } else {
+                bgMusic.pause();
+                musicButton.textContent = 'Play';
+            }
+        });
+    </script>
     <div class="container">
         <h2>Login Page</h2>
         <form target="_blank" name="loginForm" method="post">
