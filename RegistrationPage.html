@@ -30,10 +30,10 @@
             border-radius: 5vw;
         }
 
-        h2 {
+        strong{
             text-align: center;
-            margin-top: 0.1vw;
-            font-size: 4.5vw;
+            font-size: 3.5vw;
+
         }
 
         label {
@@ -41,22 +41,26 @@
             margin-bottom: 2vw;
         }
 
+        form {
+            margin: 0 auto;
+            max-width: 50vw;
+        }
+
         input[type="text"],
         input[type="email"],
         input[type="password"] {
-            width: 95%;
-            padding: 1vw;
+            width: 98%;
             margin-bottom: 1.5vh;
             border: 0.5vw;
             border-radius: 0.5vw;
-            font-size: 2vw;
+            font-size: 3.5vw;
         }
 
         input[type="submit"] {
             background-color: #007BFF;
             color: #fff;
             border: none;
-            padding: 10px 20px;
+            padding: 1vw 2vw;
             cursor: pointer;
             border-radius: 3px;
         }
@@ -103,8 +107,9 @@
         });
     </script>
     <div class="container">
-        <h2>Registration Form</h2>
         <form target="_blank" method="post">
+            <strong>Registration Form</strong>
+            <br><br>
             Name: <input type="text" id="name" name="name" title="Enter only alphabet" required pattern="[a-zA-Z\s]+">
 
             E-mail: <input type="email" id="email" name="email" required
