@@ -3,103 +3,108 @@
 <style>
     * {
         max-width: 90%;
+        max-height: fit-content;
         margin: auto;
-        padding: 2vh;
+        padding: 1rem;
     }
 
     form {
-        border: 0.5vw solid #100c0c;
+        border: 0.5rem solid #100c0c;
         padding: 1%;
     }
 
+    html {
+        font-size: 62.5%;
+    }
+
     input[type=text],
-    input[type=password] {
+    input[type=password],
+    input[type=date],
+    input[type=number],
+    input[type=email] {
         width: 100%;
-        padding: 2vh 4vh;
-        margin: 0.8vh 0;
+        padding: 1rem 1rem;
+        margin: 0.8rem 0;
         display: block;
-        border: 0.1vw solid #ccc;
+        border: 0.1rem solid #ccc;
         box-sizing: border-box;
     }
 
     button {
         background-color: #4CAF50;
         color: white;
-        padding: 1.4vw 2vw;
-        margin: 0.8vw 0;
+        padding: 1.2rem 1.2rem;
+        margin: 0.8rem 0;
         border: none;
         cursor: pointer;
         width: 100%;
-        font-size: 100%;
+        font-size: 120%;
     }
 
     button:hover {
         opacity: 0.8;
     }
 
-    .cancelbtn {
-        width: auto;
-        padding: 1vw 1.8vw;
-        background-color: #f44336;
-    }
-
     .imgcontainer {
         text-align: center;
-        margin: 24px 0 12px 0;
+        margin: 2.4rem 0 1.2rem 0;
     }
 
     .container {
-        padding: 16px;
-    }
-
-    span.psw {
-        float: right;
-        padding-top: 16px;
+        padding: 0.3rem;
     }
 
     h2 {
         text-align: center;
-        font-size: 4.5vw;
+        font-size: 4.5rem;
     }
-    h2#b{
-        margin-left: -5%;
-        font-size: 2.5vw;
+
+    b {
+        margin-left: 0%;
+        font-size: 2.1rem;
         text-align: left;
     }
 
-    input[type="text"],
-        input[type="email"],
-        input[type="password"] {
-            background-color: #bad9fa;
-            width: 100%;
-            margin-bottom: 1.5vh;
-            border: 0.5vw;
-            border-radius: 0.8vw;
-            font-size: 80%;
+
+    @media (max-width: 1200px) {
+        html {
+            font-size: 65%;
         }
 
-        input[type="date"],
-        input[type="number"]{
-            background-color: #bad9fa;
-            width: 92%;
-            margin-bottom: 1.5vh;
-            border: 0.5vw;
-            border-radius: 0.8vw;
-            font-size: 80%;
     }
-
-
     @media (max-width: 998px) {
-        html{
+        html {
             font-size: 55%;
         }
-        
+
     }
+
     @media (max-width: 768px) {
-        html{
+        html {
             font-size: 45%;
         }
-        
+
+    }
+
+    @media (max-width: 600px) {
+        html {
+            font-size: 35%;
+        }
+
+    }
+
+    @media (max-width: 480px) {
+        html {
+            font-size: 25%;
+        }
+
+    }
+
+    @media (max-width: 320px) {
+        html {
+            font-size: 15%;
+        }
+
     }
 </style>
 
@@ -112,29 +117,24 @@
         </div>
 
         <div class="container">
-            <h2 id="b"><b>Name: </b></h2>
-            <input type="text" placeholder="Enter name" name="uname" required pattern="[a-zA-Z\s]+">
+            <b>Name:</b> <input type="text" placeholder="Enter name" name="uname" required pattern="[a-zA-Z\s]+">
 
-            <h2 id="b"><b>Email: </b></h2>
-            <input type="password" placeholder="Enter Email" name="psw" required
+            <b>Email: </b><input type="password" placeholder="Enter Email" name="psw" required
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
-            <h2 id="b"><b>Password: </b></h2>
-            <input type="password" placeholder="Enter Password" name="psw"
+            <b>Password: </b><input type="password" placeholder="Enter Password" name="psw"
                 title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
                 required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
-            <h2 id="b"><b>Mobile: </b></h2>
-            <input type="number" placeholder="Enter mobile no." name="uname" title="10 digit only" required pattern="[0-9]{10}">
+            <b>Mobile: </b><input type="number" placeholder="Enter mobile no." name="uname" title="10 digit only"
+                required pattern="[0-9]{10}">
             <br>
 
-            <h2 id="b"><b>Date of Birth: </b></h2>
-            <input type="date" id="birthdate" name="birthdate" required>
+            <b>Date of Birth: </b><input type="date" id="birthdate" name="birthdate" required>
             <br>
             <br>
 
-            <h2 id="b"><b>Gender: </b></h2>
-            <select id="gender" name="gender">
+            <b>Gender: </b><select id="gender" name="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
@@ -144,12 +144,6 @@
 
 
             <button type="submit">Register</button>
-            <input type="checkbox" checked="checked"> Remember me
-        </div>
-
-        <div class="container" style="background-color:#f1f1f1">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <span class="psw">Forgot <a href="#">password?</a></span>
         </div>
     </form>
 
