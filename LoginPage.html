@@ -1,15 +1,28 @@
 <!-- Making a simple login page -->
 <html>
+
 <head>
     <title>Login Page</title>
     <script src="https://kit.fontawesome.com/d69090e79d.js" crossorigin="anonymous"></script>
     <style>
+        * {
+            max-width: 90%;
+            max-height: 120%;
+            margin: 0rem auto 1rem auto;
+            padding: 0.1rem;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
         body {
             font-family: 'Times New Roman', Times, serif;
             margin: 20;
             padding: 5;
             background-color: #f8aeae;
         }
+
         #musicButton {
             padding: 2vh 4vh;
             background-color: #007bff;
@@ -17,6 +30,7 @@
             border: 0.3vw solid #140606;
             cursor: pointer;
         }
+
         .container {
             max-width: 420px;
             margin: 0 auto;
@@ -24,14 +38,17 @@
             background-color: #f77171;
             border-radius: 10px;
         }
+
         h2 {
             text-align: center;
             margin-bottom: 20px;
         }
+
         label {
             display: block;
             margin-bottom: 8px;
         }
+
         input[type="text"],
         input[type="email"],
         input[type="password"] {
@@ -41,6 +58,7 @@
             border: 1px solid #ccc;
             border-radius: 3px;
         }
+
         input[type="submit"] {
             background-color: #007BFF;
             color: #fff;
@@ -50,17 +68,55 @@
             margin-left: 150px;
             border-radius: 3px;
         }
+
         input[type="submit"]:hover {
             background-color: #020d18;
         }
+
+        @media (max-width: 1200px) {
+            html {
+                font-size: 65%;
+            }
+        }
+
+        @media (max-width: 998px) {
+            html {
+                font-size: 55%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            html {
+                font-size: 35%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 25%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            html {
+                font-size: 15%;
+            }
+        }
     </style>
 </head>
+
 <body>
     <audio id="bgMusic" autoplay loop>
-        <source src="BGMusic.mp3" type="audio/mpeg">
+        <source src="BMusic.mp3" type="audio/mpeg">
     </audio>
 
-    <button id="musicButton"><i class="fa-solid fa-music"></i></button>
+    <button id="musicButton" style="padding: auto;"><i class="fa-solid fa-music"></i></button>
 
 
     <script>
@@ -84,10 +140,14 @@
     <div class="container">
         <h2>Login Page</h2>
         <form action="/index.html">
-            E-mail: <input type="email" id="email" name="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-            Password: <input type="password" id="password" name="password" title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters" required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" >
+            E-mail: <input type="email" id="email" name="email" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            Password: <input type="password" id="password" name="password"
+                title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
+                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
             <br>
             <input type="submit">
         </form>
     </div>
+
 </html>
