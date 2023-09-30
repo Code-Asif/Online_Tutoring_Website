@@ -1,4 +1,4 @@
-<!-- Making a simple login page -->
+<!-- Making a simple login page
 <html>
 
 <head>
@@ -18,30 +18,32 @@
 
         body {
             font-family: 'Times New Roman', Times, serif;
-            margin: 20;
-            padding: 5;
+            margin: 2rem;
+            padding: 0.5rem;
             background-color: #f8aeae;
         }
 
         #musicButton {
-            padding: 2vh 4vh;
+            padding: 1.5rem 2.2rem;
             background-color: #007bff;
             color: #fff;
-            border: 0.3vw solid #140606;
+            border: 0.3rem solid #140606;
             cursor: pointer;
+            border-radius: 2rem;
         }
 
         .container {
-            max-width: 420px;
+            max-width: 42rem;
             margin: 0 auto;
-            padding: 30px;
+            padding: 3.5rem;
             background-color: #f77171;
-            border-radius: 10px;
+            border-radius: 2.5rem;
         }
 
         h2 {
             text-align: center;
-            margin-bottom: 20px;
+            margin-bottom: 2rem;
+            place-items: center;
         }
 
         label {
@@ -150,4 +152,135 @@
         </form>
     </div>
 
+</html> -->
+<!-- ---------------------------------------------------------------------------------------------- -->
+
+
+<!DOCTYPE html>
+<html>
+<style>
+    * {
+        max-width: 100%;
+        max-height: 160%;
+        margin: auto;
+    }
+
+    form {
+        width: 100%;
+        padding: 15rem 5rem 5rem 5rem;
+    }
+
+    html {
+        font-size: 62.5%;
+    }
+
+    input[type=text],
+    input[type=password],
+    input[type=date],
+    input[type=number],
+    input[type=email] {
+        width: 100%;
+        padding: 1rem 1rem;
+        margin: 0.8rem 0;
+        box-sizing: border-box;
+    }
+
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100%;
+        background-image: url(./All_Images/background6.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+    button {
+        background-color: #4CAF50;
+        color: white;
+        padding: 1.2rem 1.2rem;
+        margin: 0.8rem 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        font-size: 120%;
+    }
+    
+    button:hover {
+        opacity: 0.8;
+    }
+
+    .container {
+        padding: 0.3rem;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 4.5rem;
+    }
+
+    b {
+        margin-left: 0%;
+        font-size: 2.1rem;
+        text-align: left;
+    }
+
+
+    @media (max-width: 1200px) {
+        html {
+            font-size: 65%;
+        }
+    }
+
+    @media (max-width: 998px) {
+        html {
+            font-size: 55%;
+        }
+    }
+
+    @media (max-width: 768px) {
+        html {
+            font-size: 45%;
+        }
+    }
+
+    @media (max-width: 600px) {
+        html {
+            font-size: 35%;
+        }
+    }
+
+    @media (max-width: 480px) {
+        html {
+            font-size: 25%;
+        }
+    }
+
+    @media (max-width: 320px) {
+        html {
+            font-size: 15%;
+        }
+    }
+</style>
+
+<body>
+    <section>
+    <form action="/LoginPage.html">
+        <h2 style="color: rgb(229, 243, 243);">Login</h2>
+
+        <div class="container">
+
+            <b>Email: </b><input type="password" placeholder="Enter Email" name="psw" required
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+
+            <b>Password: </b><input type="password" placeholder="Enter Password" name="psw"
+                title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
+                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+            <br>
+            <br><br>
+            <button type="submit">Login</button>
+        </div>
+    </form>
+</section>
+</body>
 </html>
