@@ -7,122 +7,139 @@
     <script src="https://kit.fontawesome.com/d69090e79d.js" crossorigin="anonymous"></script>
     <title>Registration Form</title>
     <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 2vw;
-            padding: 0.4vw;
-            background-color: #f8aeae;
-        }
-
-        #musicButton {
-            padding: 2vh 4vh;
-            background-color: #007bff;
-            border: 0.3vw solid #140606;
-            cursor: pointer;
-            border-radius: 1.5vw;
-        }
-
-        .container {
-            max-width: 50vw;
-            margin: 0 auto;
-            padding: 5vw;
-            background-color: #f77171;
-            border-radius: 5vw;
-        }
-
-        strong{
-            text-align: center;
-            font-size: 3.5vw;
-
-        }
-
-        label {
-            display: block;
-            margin-bottom: 2vw;
+        * {
+            max-width: 90%;
+            max-height: 120%;
+            margin: 0rem auto 1rem auto;
+            padding: 1rem;
+            border-radius: 5rem;
         }
 
         form {
-            margin: 0 auto;
-            max-width: 50vw;
+            width: 90%;
+            border: 0.5rem solid #100c0c;
+            padding: 1%;
+        }
+
+        html {
+            font-size: 62.5%;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 1rem;
+            padding: 0rem;
+            background-color: #6726fd;
+        }
+
+        .imgcontainer {
+            text-align: center;
+            margin: 2.4rem 0 1.2rem 0;
+        }
+
+        .container {
+            padding: 5rem;
+        }
+
+        strong {
+            padding-top: -2rem;
+            text-align: center;
+            font-size: 3.5rem;
         }
 
         input[type="text"],
         input[type="email"],
         input[type="password"] {
-            width: 98%;
-            margin-bottom: 1.5vh;
-            border: 0.5vw;
-            border-radius: 0.5vw;
-            font-size: 3.5vw;
+            width: 100%;
+            margin: 0.8rem 0;
+            padding: 1rem 1rem;
+            display: block;
+            border: none;
+            border-radius: 0.5rem;
+            font-size: 2.2rem;
+            box-sizing: border-box;
         }
 
         input[type="submit"] {
-            background-color: #007BFF;
-            color: #fff;
+            background-color: #0b0f13;
+            color: #f5f1f1;
             border: none;
-            padding: 1vw 2vw;
+            padding: 1.2rem 2rem;
             cursor: pointer;
-            border-radius: 3px;
+            border-radius: 3rem;
         }
+
         input[type="date"] {
-            width: 45%;
-            padding: 1vw;
-            margin-bottom: 1.5vh;
+            width: 50%;
+            margin-bottom: 1.5rem;
             border: 1px solid #ccc;
-            border-radius: 0.5vw;
-            font-size: 1;
+            border-radius: 0.5rem;
+            font-size: 2.2rem;
         }
 
         input[type="submit"]:hover {
             background-color: #020d18;
         }
+
+
+        @media (max-width: 1200px) {
+            html {
+                font-size: 65%;
+            }
+        }
+
+        @media (max-width: 998px) {
+            html {
+                font-size: 55%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            html {
+                font-size: 45%;
+            }
+        }
+
+        @media (max-width: 600px) {
+            html {
+                font-size: 35%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            html {
+                font-size: 25%;
+            }
+        }
+
+        @media (max-width: 320px) {
+            html {
+                font-size: 15%;
+            }
+        }
     </style>
 </head>
 
 <body>
-
-    <audio id="bgMusic" autoplay loop>
-        <source src="BGMusic.mp3" type="audio/mpeg">
-    </audio>
-
-    <button id="musicButton"><i class="fa-solid fa-music"></i></button>
-
-
-    <script>
-        const bgMusic = document.getElementById('bgMusic');
-        const musicButton = document.getElementById('musicButton');
-
-        window.addEventListener('load', function () {
-            bgMusic.play();
-        });
-
-        musicButton.addEventListener('click', function () {
-            if (bgMusic.paused) {
-                bgMusic.play();
-                musicButton.textContent = 'Pause';
-            } else {
-                bgMusic.pause();
-                musicButton.textContent = 'Play';
-            }
-        });
-    </script>
     <div class="container">
-        <form target="_blank" method="post">
+        <form target="_blank" action="LoginPage.html">
             <strong>Registration Form</strong>
-            <br><br>
-            Name: <input type="text" id="name" name="name" title="Enter only alphabet" required pattern="[a-zA-Z\s]+">
+            <div class="imgcontainer">
+                <img src="./All_Images/Anish_quiz.jpg" alt="Avatar" class="avatar">
+            </div>
+            <br>
+            Name: <input type="text" id="name" title="Enter only alphabet" required pattern="[a-zA-Z\s]+">
+            <br>
 
-            E-mail: <input type="email" id="email" name="email" required
-                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-
-            Password: <input type="password" id="password" name="password"
+            E-mail: <input type="email" id="email" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+            <br>
+            Password: <input type="password" id="password"
                 title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
                 required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
             <br>
-            Mobile: <input type="text" id="mobile" name="mobile" title="Enter only numbers" required
-                pattern="[0-9]{10}">
+            Mobile: <input type="text" id="mobile" title="Enter only numbers" required pattern="[0-9]{10}">
             <br><br>
-            Gender: <select id="gender" name="gender">
+            Gender: <select id="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
@@ -130,12 +147,12 @@
             <br>
             <br>
             <br>
-            Date of Birth: <input type="date" id="birthdate" name="birthdate" required>
+            Date of Birth: <input type="date" id="birthdate" required>
             <br>
             <br>
             <br>
 
-            <input type="submit" value="Register" formaction="LoginPage.html">
+            <input type="submit">
         </form>
     </div>
 </body>
