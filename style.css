@@ -61,7 +61,7 @@ header {
     position: fixed;
     border: rgb(18, 250, 250) 0.1rem solid;
     border-radius: 3rem;
-    padding-top: 1rem;
+    padding-top: 0.6rem;
     align-items: center;
 }
 
