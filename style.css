@@ -8,42 +8,6 @@ html {
     font-size: 62.5%;
 }
 
-@media (max-width: 1200px) {
-    html {
-        font-size: 65%;
-    }
-}
-
-@media (max-width: 998px) {
-    html {
-        font-size: 55%;
-    }
-}
-
-@media (max-width: 768px) {
-    html {
-        font-size: 45%;
-    }
-}
-
-@media (max-width: 600px) {
-    html {
-        font-size: 35%;
-    }
-}
-
-@media (max-width: 480px) {
-    html {
-        font-size: 25%;
-    }
-}
-
-@media (max-width: 320px) {
-    html {
-        font-size: 15%;
-    }
-}
-
 embed {
     height: 28rem;
     width: 21rem;
@@ -60,9 +24,10 @@ embed {
 }
 
 i2 {
-    height: 28%;
-    width: 21%;
+    height: 28rem;
+    width: 18rem;
     float: auto;
+    border: black solid .2rem;
 }
 
 h4 {
@@ -96,7 +61,7 @@ header {
     position: fixed;
     border: rgb(18, 250, 250) 0.1rem solid;
     border-radius: 3rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     align-items: center;
 }
 
@@ -160,12 +125,10 @@ section h5 {
 }
 
 .Courses_img {
+    height: 28rem;
+    width: 21rem;
     float: auto;
-    width: 33%;
-    height: 50%;
-    margin: 0.5rem;
-    border-radius: 3rem;
-    border: #090808 0.5vh solid;
+    border: black solid .2rem;
 }
 
 footer {
@@ -189,8 +152,8 @@ footer a:hover {
 }
 
 hr {
-    width: 60rem;
-    height: 0.1rem;
+    width: 40rem;
+    height: 0.01rem;
     background-color: rgb(27, 17, 17);
 }
 
@@ -224,6 +187,12 @@ hr {
     text-decoration: none;
 }
 
+sm1.i,
+sm2.i,
+sm3.i {
+    size: 1rem;
+}
+
 section h2 span {
     padding: 1.4rem;
     border-radius: 1.4rem;
@@ -235,4 +204,39 @@ section h3 span {
     border-radius: 4rem;
     text-decoration: none;
     background: linear-gradient(to right, #f5d837, #bbb812)
+}
+@media (max-width: 1200px) {
+    html {
+        font-size: 95%;
+    }
+}
+
+@media (max-width: 998px) {
+    html {
+        font-size: 85%;
+    }
+}
+
+@media (max-width: 768px) {
+    html {
+        font-size: 75%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 65%;
+    }
+}
+
+@media (max-width: 480px) {
+    html {
+        font-size: 55%;
+    }
+}
+
+@media (max-width: 320px) {
+    html {
+        font-size: 45%;
+    }
 }
