@@ -2,6 +2,9 @@
     font-family: 'Times New Roman', Times, serif;
     align-items: center;
 }
+html{
+    font-size: 62.5%;
+}
 embed {
     height: 28vh;
     width: 21vw;
