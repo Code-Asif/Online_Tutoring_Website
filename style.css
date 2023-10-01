@@ -44,6 +44,25 @@ h3 {
     font-size: 2.2rem;
 }
 
+
+a more {
+    text-align: center;
+    font-size: 4rem;
+}
+
+button {
+    padding: 0 1rem;
+    font-size: 2rem;
+    background-color: #f2baba;
+    border: #090808 0.2rem solid;
+    border-radius: 0.5rem;
+}
+
+button:hover {
+    font-size: 2.5rem;
+    color: red;
+}
+
 header {
     padding: 0.5rem;
     width: 92%;
@@ -64,25 +83,6 @@ header {
     padding-top: 0.6rem;
     align-items: center;
 }
-
-a more {
-    text-align: center;
-    font-size: 4rem;
-}
-
-button {
-    padding: 0 1rem;
-    font-size: 2rem;
-    background-color: #f2baba;
-    border: #090808 0.2rem solid;
-    border-radius: 0.5rem;
-}
-
-button:hover {
-    font-size: 2.5rem;
-    color: red;
-}
-
 .navbar a {
     text-align: center;
     text-decoration: none;
