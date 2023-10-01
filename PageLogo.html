@@ -14,13 +14,17 @@
         align-items: center;
         background-color: #1a1a1a;
     }
+
+    html {
+        font-size: 62.5%;
+    }
     
     .logo {
         display: flex;
         align-items: center;
         font-family: 'Arial', sans-serif;
         color: #fff;
-        font-size: 20vh;
+        font-size: 5rem;
         font-weight: bold;
         text-transform: uppercase;
         position: relative;
@@ -29,9 +33,9 @@
     
     .circle {
         align-items: center;
-        margin-top: 40vh;
-        width: 100vw;
-        height: 50vh;
+        margin-top: 40rem;
+        width: 100rem;
+        height: 50rem;
         background: radial-gradient(#00aaff, transparent);
         border-radius: 0%;
         position: absolute;
@@ -54,6 +58,42 @@
         100% {
             transform: scale(1.1);
             opacity: 0.1;
+        }
+    }
+
+    @media (max-width: 1200px) {
+        html {
+            font-size: 95%;
+        }
+    }
+    
+    @media (max-width: 998px) {
+        html {
+            font-size: 85%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        html {
+            font-size: 75%;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        html {
+            font-size: 65%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        html {
+            font-size: 55%;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        html {
+            font-size: 45%;
         }
     }
     
