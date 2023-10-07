@@ -126,26 +126,29 @@
         <div class="imgcontainer">
             <img src="./All_Images/tfc_logo.png" alt="Avatar" class="avatar">
         </div>
-
         <div class="container">
-            <b>Name:</b> <input type="text" placeholder="Enter name" name="uname" required pattern="[a-zA-Z\s]+">
+            <label class="form-label">Name:</label>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="First name" name="uname1" required pattern="[a-zA-Z\s]+">
+                <input type="text" class="form-control" placeholder="Last name" name="uname2" required pattern="[a-zA-Z\s]+">
+            </div>
 
-            <b>Email: </b><input type="password" placeholder="Enter Email" name="psw" required
+            <label class="form-label">Email: </label><input type="password" class="form-control" placeholder="Enter Email" name="psw" required
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
 
-            <b>Password: </b><input type="password" placeholder="Enter Password" name="psw"
+            <label class="form-label">Password: </label><input type="password" class="form-control" placeholder="Enter Password" name="psw"
                 title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
                 required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
 
-            <b>Mobile: </b><input type="number" placeholder="Enter mobile no." name="uname" title="10 digit only"
+            <label class="form-label">Mobile: </label><input type="number" class="form-control" placeholder="Enter mobile no." name="uname" title="10 digit only"
                 required pattern="[0-9]{10}">
             <br>
 
-            <b>Date of Birth: </b><input type="date" id="birthdate" name="birthdate" required>
+            <label class="form-label">Date of Birth: </label><input type="date" class="form-control" id="birthdate" name="birthdate" required>
             <br>
             <br>
 
-            <b>Gender: </b><select id="gender" name="gender">
+            <label class="form-label">Gender: </label><select id="gender" class="form-select" name="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
