@@ -14,11 +14,12 @@
 <html>
 <style>
     * {
-        max-width: 90%;
+        max-width: 95%;
         max-height: 120%;
-        margin: 0rem auto .1rem auto;
-        padding: .1rem;
-        border-radius: 5rem;
+        border-radius: 2rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
         font-family: 'Times New Roman', Times, serif;
     }
 
@@ -26,7 +27,7 @@
         width: 130%;
         border: 0.5rem solid #100c0c;
         font-size: 1.8rem;
-        place-content: center;
+        padding: 1.2rem;
     }
 
     html {
@@ -38,23 +39,23 @@
     input[type=date],
     input[type=number],
     input[type=email] {
-        width: 100%;
-        padding: 1rem 1rem;
-        margin: 0.8rem 0;
-        display: block;
+        width: 90%;
+        padding: 1rem;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        margin-left: 3rem;
         border: 0.1rem solid #ccc;
-        box-sizing: border-box;
     }
 
     button {
         background-color: #4CAF50;
         color: white;
         padding: 1.2rem 1.2rem;
-        margin: 0.8rem 0;
-        border: none;
+        margin: 0.8rem 1rem;
         cursor: pointer;
-        width: 100%;
+        width: 90%;
         font-size: 120%;
+        border-radius: 1rem;
     }
 
     button:hover {
@@ -67,20 +68,13 @@
     }
 
     .container {
-        padding: 0.3rem;
+        padding: 0.1rem;
     }
 
     h2 {
         text-align: center;
         font-size: 4.5rem;
     }
-
-    b {
-        margin-left: 0%;
-        font-size: 2.1rem;
-        text-align: left;
-    }
-
 
     @media (max-width: 1200px) {
         html {
@@ -134,12 +128,8 @@
         </div>
         <div class="container">
             <label class="form-label">Name:</label>
-            <div class="input-group">
                 <input type="text" class="form-control" placeholder="First name" name="uname1" required
                     pattern="[a-zA-Z\s]+">
-                <input type="text" class="form-control" placeholder="Last name" name="uname2" required
-                    pattern="[a-zA-Z\s]+">
-            </div>
 
             <label class="form-label">Email: </label><input type="password" class="form-control"
                 placeholder="Enter Email" name="psw" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
@@ -157,7 +147,7 @@
                 name="birthdate" required>
             <br>
 
-            <label class="form-label">Gender: </label><select id="gender" class="form-select" name="gender">
+            <label class="form-label">Gender: </label><select style="width: 90%;" id="gender" class="form-select" name="gender">
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="other">Other</option>
