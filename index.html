@@ -3,14 +3,254 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/d69090e79d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <title>The Future Classes</title>
 </head>
 <style>
+    * {
+        font-family: 'Times New Roman', Times, serif;
+        align-items: center;
+        padding: .1rem;
+    }
+    
+    html {
+        font-size: 62.5%;
+    }
+    
+    embed {
+        height: 28rem;
+        width: 21rem;
+        float: auto;
+        border: black solid .2rem;
+    }
+    
+    .logo {
+        display: flexbox;
+        width: 100%;
+        height: 150%;
+        border-radius: 2rem;
+        margin: 2rem;
+    }
+    
+    i2 {
+        height: 28rem;
+        width: 18rem;
+        float: auto;
+        border: black solid .2rem;
+    }
+    
+    h4 {
+        text-align: justify;
+        font-size: 2rem;
+    }
+    
+    p {
+        text-align: justify;
+    }
+    
+    h3 {
+        text-align: center;
+        font-size: 2.2rem;
+    }
+    
+    
+    a more {
+        text-align: center;
+        font-size: 4rem;
+    }
+    
+    button {
+        padding: 0 1rem;
+        font-size: 2rem;
+        background-color: #f2baba;
+        border: #090808 0.2rem solid;
+        border-radius: 0.5rem;
+    }
+    
+    button:hover {
+        font-size: 2.5rem;
+        color: red;
+    }
+    
+    header {
+        padding: 0.5rem;
+        width: 94%;
+        height: 20rem;
+        align-items: center;
+    }
+    
+    .navbar {
+        font-size: 1.5rem;
+        background-color: #333;
+        height: 7%;
+        width: 97%;
+        text-align: center;
+        position: fixed;
+        border: rgb(18, 250, 250) 0.1rem solid;
+        border-radius: 1rem;
+        padding-top: 0.6rem;
+        align-items: center;
+    }
+    .navbar a {
+        text-align: center;
+        text-decoration: none;
+        color: rgb(241, 233, 233);
+        word-spacing: 0rem;
+    }
+    
+    .navbar a:hover {
+        color: rgb(250, 30, 30);
+        font-size: 2rem;
+    }
+    
+    main {
+        background-color: white;
+        text-align: center;
+    }
+    
+    h2 {
+        text-align: center;
+        padding: 2.2rem;
+    }
+    
+    section {
+        min-height: 90%;
+    }
+    
+    video {
+        padding: 1rem;
+    }
+    
+    section h5 {
+        margin: 2rem;
+    }
+    
+    
+    .profile {
+        max-width: 50%;
+        border-radius: 2rem;
+        border: rgb(10, 7, 7);
+    }
+    
+    .Courses_img {
+        height: 28rem;
+        width: 21rem;
+        float: auto;
+        border: black solid .2rem;
+    }
+    
+    footer {
+        background-color: #333;
+        overflow: hidden;
+        text-align: center;
+        word-spacing: 2.2rem;
+    }
+    
+    footer a {
+        font-size: 1.2rem;
+        text-decoration: none;
+        padding: 0.8rem;
+        text-align: center;
+        color: white;
+    }
+    
+    footer a:hover {
+        color: red;
+        font-size: 1.4rem;
+    }
+    
+    hr {
+        height: 0.01rem;
+        background-color: rgb(27, 17, 17);
+    }
+    
+    .name_txt {
+        font-size: 3rem;
+        text-align: center;
+        font-weight: 90%;
+        letter-spacing: 0.2rem;
+        word-spacing: 1rem;
+        font-family: 'Gill Sans';
+    }
+    
+    .sm1 {
+        background-color: rgb(190, 162, 162);
+        padding: 0.8rem;
+        border-radius: .8rem;
+        text-decoration: none;
+    }
+    
+    .sm2 {
+        background-color: rgb(190, 162, 162);
+        padding: 0.8rem;
+        border-radius: .8rem;
+        text-decoration: none;
+    }
+    
+    .sm3 {
+        background-color: rgb(190, 162, 162);
+        padding: 0.8rem;
+        border-radius: .8rem;
+        text-decoration: none;
+    }
+    
+    sm1.i,
+    sm2.i,
+    sm3.i {
+        size: 1rem;
+    }
+    
+    section h2 span {
+        padding: 1.4rem;
+        border-radius: 1.4rem;
+        background: linear-gradient(to right, #f5d837, #bbb812)
+    }
+    
+    section h3 span {
+        padding: 1rem;
+        border-radius: 4rem;
+        text-decoration: none;
+        background: linear-gradient(to right, #f5d837, #bbb812)
+    }
+    @media (max-width: 1200px) {
+        html {
+            font-size: 95%;
+        }
+    }
+    
+    @media (max-width: 998px) {
+        html {
+            font-size: 85%;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        html {
+            font-size: 75%;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        html {
+            font-size: 65%;
+        }
+    }
+    
+    @media (max-width: 480px) {
+        html {
+            font-size: 55%;
+        }
+    }
+    
+    @media (max-width: 320px) {
+        html {
+            font-size: 45%;
+        }
+    }
 </style>
 
 <body>
@@ -32,7 +272,7 @@
     <main>
         <section>
             <br><br><br><br><br><br><br><br>
-            <h2 id="Courses1" <u> <span> Courses</span></u></h2>
+            <h2 id="Courses1" <u> <span> Popular Courses</span></u></h2>
             <br>
             <img class="Courses_img" src="./All_Images/Web_devlop.png" alt="Web Development">
             <br><br><br>
@@ -40,16 +280,43 @@
             <br><br><br>
             <img class="Courses_img" src="./All_Images/OpenSource.png" alt="Open Source">
         </section>
-        <br><br><br><br>
+        <br><br><br>
         <hr>
         <section>
             <h2 id="Courses2" <u> <span> Courses</span></u></h2>
             <br>
-            <img class="Courses_img" src="./All_Images/Web_devlop.png" alt="Web Development">
-            <br><br><br>
-            <img class="Courses_img" src="./All_Images/AppDev.png" alt="App development">
-            <br><br><br>
-            <img class="Courses_img" src="./All_Images/OpenSource.png" alt="Open Source">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./All_Images/webdev2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./All_Images/appdev2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./All_Images/opensource2.png" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
         <hr>
         <section>
