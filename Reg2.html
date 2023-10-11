@@ -14,20 +14,16 @@
 <html>
 <style>
     * {
-        max-width: 95%;
-        max-height: 120%;
-        border-radius: 2rem;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-        margin-left: 3rem;
+        margin: auto;
+        border-radius: 1.2rem;
         font-family: 'Times New Roman', Times, serif;
     }
 
     form {
-        width: 130%;
+        width: 80vw;
         border: 0.5rem solid #100c0c;
         font-size: 1.8rem;
-        padding: 1.2rem;
+        padding: .2rem;
     }
 
     html {
@@ -39,11 +35,9 @@
     input[type=date],
     input[type=number],
     input[type=email] {
+        margin: auto;
         width: 90%;
         padding: 1rem;
-        margin-top: 1rem;
-        margin-bottom: 3rem;
-        margin-left: 3rem;
         border: 0.1rem solid #ccc;
     }
 
@@ -64,7 +58,9 @@
 
     .imgcontainer {
         text-align: center;
-        margin: 2.4rem 0 1.2rem 0;
+        width: fit-content;
+        float: auto;
+        display: block;
     }
 
     .container {
@@ -121,42 +117,47 @@
 </style>
 
 <body>
-    <form action="/LoginPage.html">
-        <h2>Registration Form</h2>
-        <div class="imgcontainer">
-            <img src="./All_Images/tfc_logo.png" alt="Avatar" class="avatar">
+    <div class="card">
+        <div class="card-header"></div>
+        <div class="card-body">
+            <form action="/LoginPage.html">
+                <h2>Registration Form</h2>
+                <div class="container">
+                    <div class="imgcontainer">
+                        <img src="./All_Images/tfc_logo.png" alt="Avatar" class="avatar">
+                    </div>
+                    <label class="form-label">Name:</label>
+                        <input type="text" class="form-control" placeholder="First name" name="uname1" required
+                            pattern="[a-zA-Z\s]+">
+        
+                    <label class="form-label">Email: </label><input type="password" class="form-control"
+                        placeholder="Enter Email" name="psw" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+        
+                    <label class="form-label">Password: </label><input type="password" class="form-control"
+                        placeholder="Enter Password" name="psw"
+                        title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
+                        required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+        
+                    <label class="form-label">Mobile: </label><input type="number" class="form-control"
+                        placeholder="Enter mobile no." name="uname" title="10 digit only" required pattern="[0-9]{10}">
+                    <br>
+        
+                    <label class="form-label">Date of Birth: </label><input type="date" class="form-control" id="birthdate"
+                        name="birthdate" required>
+                    <br>
+        
+                    <label class="form-label">Gender: </label><select style="width: 90%;" id="gender" class="form-select" name="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                    <br>
+                    <br>
+                    <button type="submit">Register</button>
+                </div>
+            </form>
         </div>
-        <div class="container">
-            <label class="form-label">Name:</label>
-                <input type="text" class="form-control" placeholder="First name" name="uname1" required
-                    pattern="[a-zA-Z\s]+">
-
-            <label class="form-label">Email: </label><input type="password" class="form-control"
-                placeholder="Enter Email" name="psw" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
-
-            <label class="form-label">Password: </label><input type="password" class="form-control"
-                placeholder="Enter Password" name="psw"
-                title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
-                required pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
-
-            <label class="form-label">Mobile: </label><input type="number" class="form-control"
-                placeholder="Enter mobile no." name="uname" title="10 digit only" required pattern="[0-9]{10}">
-            <br>
-
-            <label class="form-label">Date of Birth: </label><input type="date" class="form-control" id="birthdate"
-                name="birthdate" required>
-            <br>
-
-            <label class="form-label">Gender: </label><select style="width: 90%;" id="gender" class="form-select" name="gender">
-                <option value="male">Male</option>
-                <option value="female">Female</option>
-                <option value="other">Other</option>
-            </select>
-            <br>
-            <br>
-            <button type="submit">Register</button>
-        </div>
-    </form>
+    </div>
 </body>
 
 </html>
