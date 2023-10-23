@@ -1,25 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My notes</title>
 </head>
 <style>
-    *{
+    * {
         background-image: url("./All_Images/notes2.jpg");
         background-repeat: repeat-y;
         background-size: cover;
     }
-    h2{
+
+    h2 {
         text-align: center;
         font-size: 2rem;
     }
+
+    .navbar {
+        text-align: center;
+        font-size: 1.5rem;
+        background-color: #333;
+        height: 8%;
+        width: 98%;
+        position: fixed;
+        border-radius: 1rem;
+        padding-top: .4rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .navbar a {
+        font-size: 1.5rem;
+        text-align: center;
+        text-decoration: none;
+        color: rgb(241, 233, 233);
+        word-spacing: normal;
+    }
+
+    .navbar a:hover {
+        color: rgb(250, 30, 30);
+        font-size: 1.7rem;
+    }
+
     @media (max-width: 1200px) {
         html {
             font-size: 80%;
         }
-        
+
     }
 
     @media (max-width: 998px) {
@@ -64,7 +93,22 @@
         }
     }
 </style>
+
 <body>
-        <h2>Make your own notes here</h2>
+    <div class="navbar">
+        <a id="a1" target="_self" href="index.html"> <i class="fa-solid fa-house"></i>Home </a>
+        <a id="a2" target="_blank" href="Experts.html"> Experts </a>
+        <a id="a3" target="_self" href="#Courses1"> Courses </a>
+        <a id="a4" target="_blank" href="StudyMaterial.html"><i class="fa-solid fa-book-open-reader"></i>Study-Materials
+        </a>
+        <a id="a5" target="_self" href="#Welcome"> About_Us </a>
+        <a id="a6" target="_blank" href="LoginPage.html"><i class="fa-solid fa-user-tie"></i>Register/Login</a>
+    </div>
+    <br>
+    <div>
+        <br><br>
+    </div>
+    <h2>Make your own notes here</h2>
 </body>
+
 </html>
