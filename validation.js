@@ -2,9 +2,9 @@
 
 function validateForm() {
     var name = document.forms["registrationForm"]["uname1"].value;
-    var email = document.forms["registrationForm"]["psw"].value;
+    var email = document.forms["registrationForm"]["email"].value;
     var password = document.forms["registrationForm"]["psw"].value;
-    var mobile = document.forms["registrationForm"]["uname"].value;
+    var mobile = document.forms["registrationForm"]["mob"].value;
     var birthdate = document.forms["registrationForm"]["birthdate"].value;
 
     if (name === "") {
