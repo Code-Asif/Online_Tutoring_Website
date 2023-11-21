@@ -36,7 +36,7 @@
         border-radius: 5px;
         padding: .5px;
         box-sizing: border-box;
-        display: block;
+        display: flexbox;
         justify-content: center;
         align-items: center;
         text-align: center;
@@ -45,7 +45,6 @@
 
 <body>
     <div>
-        <div class="absolute inset-4 ">
             <div
                 class="center-div rounded-md border-zinc-200 bg-white p-2 relative h-full w-full overflow-clip border px-0 py-0">
                 <iframe title="" style="border: none;" srcdoc="<body><script src='https://cdn.botpress.cloud/webchat/v1/inject.js'></script>
@@ -74,7 +73,6 @@
                 window.botpressWebChat.onEvent(function () { window.botpressWebChat.sendEvent({ type: 'show' }) }, ['LIFECYCLE.LOADED']);
                 </script></body>" width="100%" height="100%"></iframe>
             </div>
-        </div>
     </div>
 </body>
 
