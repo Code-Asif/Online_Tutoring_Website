@@ -7,17 +7,15 @@
     <title>SimpliLegal</title>
 </head>
 <style>
-    img {
-        height: 98vh;
-        width: 70vw;
+    *url{
+        background-image: url("./All_Images/Steps2.png");
     }
 
     body {
         font-family: 'Arial', sans-serif;
         margin: 0;
         padding: 0;
-        background-color: #f4f4f4;
-        float: left;
+        float: right;
     }
 
     body {
@@ -35,89 +33,17 @@
         width: 50vw;
         height: 80vh;
         background-color: rgb(102, 71, 255);
-        border-radius: 15px;
-        padding: 5px;
+        border-radius: 5px;
+        padding: .5px;
         box-sizing: border-box;
-        color: white;
-        display: flex;
+        display: block;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
-
-    @media only screen and (max-width: 600px) {
-        .center-div {
-            height: 40vh;
-            width: 80vw;
-            background-color: rgb(102, 71, 255);
-            border-radius: 15px;
-            padding: 5px;
-            box-sizing: border-box;
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-        }
-    }
-
-    .container {
-        max-width: 800px;
-        margin: 50px auto;
-        position: relative;
-    }
-
-    .step {
-        position: relative;
-        margin-bottom: 50px;
-    }
-
-    .step img {
-        max-width: 100px;
-        height: auto;
-        margin-bottom: 20px;
-    }
-
-    .step-text {
-        text-align: center;
-    }
-
-    .arrow {
-        position: absolute;
-        width: 100px;
-        height: 100px;
-        border-radius: 50%;
-        background-color: #4CAF50;
-        transform: rotate(45deg);
-    }
-
-    .arrow::before {
-        content: '';
-        position: absolute;
-        width: 10px;
-        height: 10px;
-        background-color: #4CAF50;
-        transform: rotate(45deg);
-        top: 50%;
-        left: 50%;
-        margin-top: -5px;
-        margin-left: -5px;
-    }
-
-    .arrow::after {
-        content: '';
-        position: absolute;
-        width: 2px;
-        height: 60px;
-        background-color: #4CAF50;
-        top: 50%;
-        left: 50%;
-        transform: translateX(-50%) translateY(-50%) rotate(45deg);
-    }
 </style>
 
 <body>
-    <img src="./All_Images/Steps2.png" alt="image">
     <div>
         <div class="absolute inset-4 ">
             <div
