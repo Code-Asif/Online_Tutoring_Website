@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -77,7 +78,7 @@
         html {
             font-size: 80%;
         }
-        
+
     }
 
     @media (max-width: 998px) {
@@ -124,46 +125,87 @@
 </style>
 
 <body>
-    <div class="card">
-        <div class="card-header"></div>
-        <div class="card-body">
-            <form name="registrationForm" action="/LoginPage.html"  onsubmit="return validateForm()">
-                <h2>Registration Form</h2>
-                <div class="container">
-                    <div class="imgcontainer">
-                        <img src="./All_Images/tfc_logo.png" alt="Avatar" class="avatar">
-                    </div>
-                    <label class="form-label">Name:</label>
+    <form name="registrationForm" action="/LoginPage.html" onsubmit="return validateForm()">
+        <h2>Registration Form</h2>
+        <div class="container">
+            <div class="imgcontainer">
+                <img src="./All_Images/tfc_logo.png" alt="Avatar" class="avatar">
+            </div>
+            <table border="1" style="width: 100%;">
+                <tr>
+                    <th>
+                        <label class="form-label">Name:</label>
+                    </th>
+                    <td colspan="3">
                         <input type="text" class="form-control" placeholder="First name" name="uname1">
-        
-                    <label class="form-label">Email: </label><input type="email" class="form-control"
-                        placeholder="Enter Email" name="email" >
-        
-                    <label class="form-label">Password: </label><input type="password" class="form-control"
-                        placeholder="Enter Password" name="psw"
-                        title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters"
-                        >
-        
-                    <label class="form-label">Mobile: </label><input type="number" class="form-control"
-                        placeholder="Enter mobile no." name="mob" title="10 digit only" >
-                    <br>
-        
-                    <label class="form-label">Date of Birth: </label><input type="date" class="form-control" id="birthdate"
-                        name="birthdate" >
-                    <br>
-        
-                    <label class="form-label">Gender: </label><select style="width: 90%;" id="gender" class="form-select" name="gender">
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                    </select>
-                    <br>
-                    <br>
-                    <button type="submit">Register</button>
-                </div>
-            </form>
+                    </td>
+                    
+                </tr>
+
+                <tr>
+                    <th>
+                        <label class="form-label">Email: </label>
+                    </th>
+                    <td colspan="3">
+                        <input type="email" class="form-control" placeholder="Enter Email" name="email">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label class="form-label">Password: </label>
+                    </th>
+                    <td colspan="3">
+                        <input type="password" class="form-control" placeholder="Enter Password" name="psw"
+                            title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters">
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <label class="form-label">Mobile: </label>
+                    </th>
+                    <td >
+                        <input type="number" class="form-control" placeholder="Enter code" name="code"
+                            title="Enter country code">
+                    </td>
+                    <td>
+                        <input type="number" class="form-control" placeholder="Enter mobile no." name="mob"
+                            title="10 digit only">
+                    </td>
+                </tr>
+
+                <br>
+
+                <tr>
+                    <th>
+                        <label class="form-label">Date of Birth: </label>
+                    </th>
+                    <td colspan="3">
+                        <input type="date" class="form-control" id="birthdate" name="birthdate">
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label class="form-label">Gender: </label>
+                    </th>
+                    <td colspan="3">
+                        <select style="width: 90%;" id="gender" class="form-select" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <br>
+                <tr>
+                    <th colspan="4">
+                        <button type="submit">Register</button>
+                    </th>
+                </tr>
+            </table>
         </div>
-    </div>
+    </form>
 </body>
 
 </html>
