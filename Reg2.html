@@ -125,6 +125,51 @@
 </style>
 
 <body>
+    <script>
+        function validateForm() {
+            var name = document.forms["registrationForm"]["uname1"].value;
+            var email = document.forms["registrationForm"]["email"].value;
+            var password = document.forms["registrationForm"]["psw"].value;
+            var mobile = document.forms["registrationForm"]["mob"].value;
+            var birthdate = document.forms["registrationForm"]["birthdate"].value;
+
+            if (name === "") {
+                alert("Name must be filled out");
+                return false;
+            }
+
+            if (email === "") {
+                alert("Email must be filled out");
+                return false;
+            } else if (!/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/.test(email)) {
+                alert("Invalid email address");
+                return false;
+            }
+
+            if (password === "") {
+                alert("Password must be filled out");
+                return false;
+            } else if (!/(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}/.test(password)) {
+                alert("Password must contain at least one number and one uppercase and lowercase letter, and be at least 8 characters long");
+                return false;
+            }
+
+            if (mobile === "") {
+                alert("Mobile must be filled out");
+                return false;
+            } else if (!/^[0-9]{10}$/.test(mobile)) {
+                alert("Invalid mobile number. It should have 10 digits.");
+                return false;
+            }
+
+            if (birthdate === "") {
+                alert("Date of Birth must be filled out");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
     <form name="registrationForm" action="/LoginPage.html" onsubmit="return validateForm()">
         <h2>Registration Form</h2>
         <div class="container">
@@ -133,69 +178,58 @@
             </div>
             <table border="1" style="width: 100%;">
                 <tr>
-                    <th>
+                    <th colspan="1">
                         <label class="form-label">Name:</label>
                     </th>
-                    <td colspan="3">
+                    <td colspan="5">
                         <input type="text" class="form-control" placeholder="First name" name="uname1">
                     </td>
-                    
+
                 </tr>
 
                 <tr>
-                    <th>
+                    <th colspan="1">
                         <label class="form-label">Email: </label>
                     </th>
-                    <td colspan="3">
+                    <td colspan="5">
                         <input type="email" class="form-control" placeholder="Enter Email" name="email">
                     </td>
                 </tr>
 
                 <tr>
-                    <th>
+                    <th colspan="1">
                         <label class="form-label">Password: </label>
                     </th>
-                    <td colspan="3">
+                    <td colspan="5">
                         <input type="password" class="form-control" placeholder="Enter Password" name="psw"
                             title="Must contain atleast one number and one uppercase and lowercase letter, and atleast 8 or more characters">
                     </td>
                 </tr>
 
                 <tr>
-                    <th>
+                    <th colspan="1">
                         <label class="form-label">Mobile: </label>
                     </th>
-                    <td colspan="1">
-                        <input type="number" class="form-control" placeholder="Enter code" name="code"
-                            title="Enter country code">
-                    </td>
-                    <td colspan="1">
+                    <td colspan="5">
                         <input type="number" class="form-control" placeholder="Enter mobile no." name="mob"
                             title="10 digit only">
                     </td>
-                    <td>
-                        <div>
-                            
-                        </div>
-                    </td>
                 </tr>
-
                 <br>
-
                 <tr>
-                    <th>
+                    <th colspan="1">
                         <label class="form-label">Date of Birth: </label>
                     </th>
-                    <td colspan="3">
+                    <td colspan="5">
                         <input type="date" class="form-control" id="birthdate" name="birthdate">
                     </td>
                 </tr>
                 <tr>
-                    <th>
+                    <th colspan="1">
                         <label class="form-label">Gender: </label>
                     </th>
-                    <td colspan="3">
-                        <select style="width: 90%;" id="gender" class="form-select" name="gender">
+                    <td colspan="5">
+                        <select id="gender" class="form-select" name="gender">
                             <option value="male">Male</option>
                             <option value="female">Female</option>
                             <option value="other">Other</option>
@@ -204,7 +238,7 @@
                 </tr>
                 <br>
                 <tr>
-                    <th colspan="4">
+                    <th colspan="5">
                         <button type="submit">Register</button>
                     </th>
                 </tr>
@@ -212,5 +246,4 @@
         </div>
     </form>
 </body>
-
 </html>
