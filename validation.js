@@ -7,7 +7,7 @@ function validateForm() {
     var mobile = document.forms["registrationForm"]["mob"].value;
     var birthdate = document.forms["registrationForm"]["birthdate"].value;
 
-    if (name === "") {
+    if (name == "") {
         alert("Name must be filled out");
         return false;
     }
